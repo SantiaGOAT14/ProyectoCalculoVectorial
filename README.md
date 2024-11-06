@@ -25,6 +25,6 @@ El programa hará lo siguiente:
 
 🔹 Calcular el valor de ℎ usando los valores obtenidos de 𝑥 y 𝑦, y verificar que 𝑥, 𝑦 y ℎ sean todos positivos.
 
-🔹 Imprimir los valores óptimos de 𝑥, 𝑦 y ℎ que maximizan el volumen, junto con el volumen máximo alcanzado.
+🔹 Imprimir los valores óptimos de 𝑥, 𝑦 y ℎ que maximizan el volumen, junto con el volumen máximo alcanzado, todo en las unidades seleccionadas por el usuario.
 
-🔹 Permitir al usuario repetir el cálculo ingresando diferentes valores de 𝐴𝑡𝑜𝑡𝑎𝑙​ hasta que decida terminar el programa.
+🔹 Permitir al usuario repetir el cálculo ingresando diferentes valores de 𝐴𝑡𝑜𝑡𝑎𝑙​ y unidades hasta que decida terminar el programa.
