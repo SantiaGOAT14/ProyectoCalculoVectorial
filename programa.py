@@ -34,6 +34,25 @@ def calcular():
         if A_total_value <= 0:
             print("Error: El área total debe ser un número positivo mayor que cero.")
             return
+        
+        # Pedimos al usuario que elija las unidades
+        print("\nSeleccione las unidades en las que desea el resultado:")
+        print("1. Centímetros")
+        print("2. Metros")
+        print("3. Pulgadas")
+        
+        unidad = input("Ingrese el número de la opción elegida: ")
+
+        # Definimos el sufijo de unidades basado en la selección
+        if unidad == "1":
+            unidad_texto = "cm"
+        elif unidad == "2":
+            unidad_texto = "m"
+        elif unidad == "3":
+            unidad_texto = "in"
+        else:
+            print("Opción inválida. Se usará cm por defecto.")
+            unidad_texto = "cm"
 
         # Sustituimos el valor de A_total en las derivadas parciales
         dV_dx_num = dV_dx.subs(A_total, A_total_value)
@@ -67,10 +86,10 @@ def calcular():
         print("\nDimensiones óptimas y volumen máximo:")
         for i, solution in enumerate(optimal_solutions, start=1):
             print(f"Solución {i}:")
-            print(f"  x = {solution['x']:.2f}")
-            print(f"  y = {solution['y']:.2f}")
-            print(f"  h = {solution['h']:.2f}")
-            print(f"  Volumen máximo = {solution['V']:.2f}")
+            print(f"  x = {solution['x']:.2f} {unidad_texto}")
+            print(f"  y = {solution['y']:.2f} {unidad_texto}")
+            print(f"  h = {solution['h']:.2f} {unidad_texto}")
+            print(f"  Volumen máximo = {solution['V']:.2f} {unidad_texto}³")
             print("-" * 30)
 
     except ValueError:
