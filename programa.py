@@ -1,4 +1,3 @@
-from multiprocessing.spawn import _main
 from sympy import symbols, Eq, solve, diff
 
 # Declaramos las variables
